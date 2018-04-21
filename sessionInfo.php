@@ -31,6 +31,7 @@ include_once('bin/session.php');
     foreach($_SESSION as $key => $val) {
     echo "<li>$key -> $val</li>";
     }
+    echo session_status();
   ?>
      
     </td>

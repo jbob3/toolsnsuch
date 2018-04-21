@@ -1,6 +1,6 @@
 <?php
-
 include_once('bin/session.php');
+
 
 ?>
 
@@ -39,8 +39,6 @@ include_once('bin/session.php');
         <input type="password" name="password" ><br><br>
 
         <input type="submit"value="Login"><br><br>
-
-    <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
 
 </form>
 

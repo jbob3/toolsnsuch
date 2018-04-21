@@ -1,6 +1,7 @@
 <?php
 
-include_once('bin/session.php');
+include_once 'bin/session.php';
+
 
 ?>
 
