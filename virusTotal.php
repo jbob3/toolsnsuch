@@ -10,7 +10,7 @@ include_once('bin/session.php');
 <head>
   <meta charset="utf-8">
 
-  <title>Untitled</title>
+  <title>Jbob's Tools</title>
   <meta name="description" content="L33t tools by Jbob">
   <meta name="author" content="Jbob">
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -26,13 +26,14 @@ include_once('bin/session.php');
     <?php include_once 'bin/nav.php'; ?>
     </td>
     <td class="body">
-    <h4>Session info:</h4><hr>
-    <?php
-    foreach($_SESSION as $key => $val) {
-    echo "<li>$key -> $val</li>";
-    }
-  ?>
-     
+      <h2>Virus Total IP Search:</h2>
+      <form action="bin/vtApi.php" method:"get">
+        IP to Search:<br>
+        <input type="text" name="ip" ><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      <hr>
+      <p><a href='sessionInfo.php'>Session Info</a></p>
     </td>
   </tr>
 </table> 

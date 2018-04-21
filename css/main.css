@@ -1,0 +1,35 @@
+table { 
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td.body {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td.nav {
+    width: 9em;
+    background: rgba(36, 35, 35, 0.76);
+    text-align: center;
+    padding: 7px;
+}
+td.loginPadding {
+    width: 30%;
+} 
+li {
+    list-style-type: none;
+    padding: 3px;
+}
+a {
+    background-color: #999;
+    color: #fff;
+    left: 10%;
+    padding: 0.2em;
+    margin: 0.5em;
+    text-decoration: none;
+
+}
+a:hover {
+    background-color: #666;
+    padding: 0.3em 0.1em 0.3em 0.1em
+}

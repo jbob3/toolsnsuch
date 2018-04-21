@@ -13,20 +13,24 @@ include_once('bin/session.php');
   <title>Jbob's Tools</title>
   <meta name="description" content="L33t tools by Jbob">
   <meta name="author" content="Jbob">
-
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 
 <body>
-<h1>Check out the sweet tools</h1><hr>
-<br><hr>
-<h4>Virus Total IP Search:</h4>
- <form action="bin/vtApi.php" method:"get">
-  IP to Search:<br>
-  <input type="text" name="ip" ><br><br>
-  <input type="submit" value="Submit">
-</form> 
-<hr>
-<p><a href='sessionInfo.php'>Session Info</a></p>
+
+
+ <table style="width:100%">
+  <tr>
+    <td class="nav">
+    <?php include_once 'bin/nav.php'; ?>
+    </td>
+    <td class="body">
+      <h1>Check out some of my sweet tools</h1><hr>
+      <br><hr>
+      
+    </td>
+  </tr>
+</table> 
 </body>
 </html>
