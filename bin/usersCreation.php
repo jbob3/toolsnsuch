@@ -11,8 +11,9 @@ if (is_writable($usersFile)) {
         
         }
     $v['passwordHash'] = password_hash($v['password'], PASSWORD_BCRYPT);
-    $userString = $v['username'] . '= \'' . $v['passwordHash'] . '\';';
+    $userString = '$u[\'' . $v['username'] . '\'] = \'' . $v['passwordHash'] . '\';' . "\n";
     fwrite($handle, $userString);
+    $v['success'] = true;
 }
 else {
     echo 'Error: File not writeable';
@@ -47,11 +48,11 @@ fclose($handle);
     <td class="body">
     <h3>Password Confirmation</h3>
     <?php
-    var_dump($v);
-    
-
-    if (password_verify('test', $v['passwordHash'])){
-        echo 'Password verified';
+    if($v['success']){
+        echo '<h4>User added!</h4>';
+    }
+    else {
+        echo '<h4>User not saved</h4>';
     }
 
 
